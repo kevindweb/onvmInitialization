@@ -1,5 +1,5 @@
 REPO=openNetVM
-GIT_USER=kevindweb
-NAME='Kevin Deems'
-EMAIL=kevin8deems@gmail.com
-CLOUD_USER=kdeems
+GIT_USER=<your git username>
+NAME='<your name in this string>'
+EMAIL=<github email>
+CLOUD_USER=<cloudlab username>
