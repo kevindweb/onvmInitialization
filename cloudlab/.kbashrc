@@ -1,0 +1,24 @@
+bash_file=~/.kbashrc
+alias sbp="source $bash_file && clear"
+alias vbp="vim -c 'set syn=sh' $bash_file"
+alias huge="grep -i huge /proc/meminfo"
+alias lear="clear"
+alias killSSH="pkill -f ssh-agent"
+
+..() {
+    cd ../"$1";
+}
+
+speed() {
+    if [ $# -eq 0 ]
+        then
+            num="1"
+        else
+            num=$1
+    fi
+    cd ~/openNetVM/examples/speed_tester && ./go.sh $num -d $num;
+}
+
+goto() {
+    mkdir -p "$1" && cd ./"$1";
+}
